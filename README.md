@@ -1,6 +1,6 @@
 # Impress CouchApp
 
-## [Markdown](http://code.google.com/p/pagedown/) + [Impress](https://github.com/bartaz/impress.js) + CouchDB
+## [Markdown](http://code.google.com/p/pagedown/) + [Impress](https://github.com/bartaz/impress.js) + [CouchDB](http://couchdb.apache.org)
 
  * Write markdown
  * Run import script (import_md.py)
@@ -11,7 +11,7 @@
 Invoke the import script with the location of a markdown file to create slide
 documents in the $PWD
 
-    python import\_md.py $MY\_MARKDOWN/$MY\_TALK
+    python import_md.py $MY_MARKDOWN/$MY_TALK
 
 Push the couchapp and the documents to CouchDB using your favourite couchapp
 client.
