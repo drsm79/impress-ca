@@ -19,3 +19,7 @@ client.
 Once up you can retrieve the markdown via the following list:
 
     http://localhost:5984/talk/_design/impress-ca/_list/markdown/slides?reduce=false&include_docs=true
+
+## Styling and positioning
+Each slide has an id the same as the couch document id and can also have a class if the document contains a 
+slide_class. The slides position is set via slide\_x and slide\_y in the document.
