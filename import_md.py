@@ -8,17 +8,17 @@ f = open(file_path)
 
 md = f.read()
 f.close()
-
+width = 5
 counter = 0
 for slide in md.split('\n#'):
     if counter > 0:
         slide = '#%s' % slide
-
+    y, x = divmod(counter, width)
     slide_dict = {
       "slide_title": slide[slide.rfind('#') + 1:slide.find('\n')].strip(),
       "slide_content": slide,
-      "slide_x": 1000 * counter,
-      "slide_y": -1500,
+      "slide_x": 1000 * x,
+      "slide_y": -1500 + (800 * y),
       "slide_number": counter + 1
     }
 
