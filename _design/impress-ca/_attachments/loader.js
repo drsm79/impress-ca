@@ -1,6 +1,6 @@
 function app_load(scripts, base) {
   for (var i=0; i < scripts.length; i++) {
-    document.write('<script src="'+ base + '/' + scripts[i]+'"><\/script>');
+    document.write('<script src="'+ base + scripts[i]+'"><\/script>');
   };
 };
 
