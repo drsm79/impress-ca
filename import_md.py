@@ -15,7 +15,7 @@ for slide in md.split('\n#'):
         slide = '#%s' % slide
     y, x = divmod(counter, width)
     slide_dict = {
-      "slide_title": slide[slide.rfind('#') + 1:slide.find('\n')].strip(),
+      "slide_title": slide[slide.rfind('#', 0, 6) + 1:slide.find('\n')].strip(),
       "slide_content": slide,
       "slide_x": 1000 * x,
       "slide_y": -1500 + (800 * y),
